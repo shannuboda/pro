@@ -1,0 +1,123 @@
+
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  background:gainsboro;
+}
+div{
+  width: auto;
+  height: 100%;
+
+}
+h3{
+  color: gray !important;
+}
+p{
+  color: gray !important;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+}
+
+.header {
+  background-color: gainsboro;
+  color: #fff;
+  padding: 10px;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 150px;
+margin-top: -26rem;
+  background-color: #333;
+  color: #fff;
+  /* height: 50vh; */
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-110%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+/* .image-container {
+  position: relative;
+}
+
+.grey-bg {
+  width: 100%;
+}
+
+.statue {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+
+h4{
+  color :rebeccapurple
+}
+
+
+.image-container {
+  /* position: relative; */
+  width: 100%; /* Ensure full width */
+  height: 400px;    /*Set an appropriate height8*/
+}
+.grey-bg {
+  position: absolute;
+  /* top: 50%;
+  /* bottom: 1000; */
+  /* left: 50%; */ 
+  top : 0; /* Adjust as needed */
+  left: 30%; /* Adjust as needed */
+  width: 100% ;
+  height: 100%; 
+}
+
+.statue {
+  position: absolute;
+  top: 55%; /* Adjust as needed */
+  left: 60%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  max-width: 100%; /* Ensure image fits within container */
+  max-height: 100%; /* Ensure image fits within container */
+}
+.main-text{
+  word-break: break-all;
+  max-width: 34rem;
+  line-height: 2;
+  letter-spacing: 0.2rem;
+margin-bottom: -1rem;
+}
+.description-text{
+  max-width: 22rem;
+  text-align: justify;
+  word-wrap: break-word;
+}
